@@ -10,7 +10,7 @@ import { IoSparkles } from "react-icons/io5";
 
 export default function TopHeader() {
   return (
-    <div className="h-12 bg-white border-b border-gray-200 flex justify-between items-center px-3 text-sm">
+    <div className="h-16 bg-white border-b border-gray-200 flex justify-between items-center px-3 text-sm">
       {/* Left section: Chats title and icon */}
       <div className="flex items-center space-x-2 text-gray-600 font-medium">
         <IoChatbubbleEllipses className="w-4 h-4 text-gray-400" />
