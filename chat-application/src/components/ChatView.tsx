@@ -1,7 +1,10 @@
 // components/ChatView.tsx
+import ChatViewHeader from "@/components/chatview-components/ChatViewHeader";
+import MessageBar from "@/components/chatview-components/MessageBar";
 export default function ChatView() {
   return (
     <div className="flex-grow flex flex-col justify-between " style={{ backgroundImage: "url('/whatsapp_background.jpg')" }} >
+      <ChatViewHeader />
       <div className="p-4 space-y-2 overflow-y-auto">
         <div className="text-center text-gray-500 text-xs "><div className="bg-gray-100 rounded p-2 inline-block text-xs shadow">22-01-2025</div></div>
         <div className="text-left">
@@ -25,14 +28,8 @@ export default function ChatView() {
           <div className="bg-green-100 text-green-800 rounded p-2 inline-block text-xs shadow">testing</div>
         </div>
       </div>
-      <div className="border-t p-2 flex items-center">
-        <input
-          type="text"
-          placeholder="Message..."
-          className="flex-grow px-3 py-1 border rounded-full text-sm"
-        />
-        <button className="ml-2 text-green-600">▶️</button>
-      </div>
+      
+      <MessageBar />
     </div>
   );
 }
