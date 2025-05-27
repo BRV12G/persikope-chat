@@ -14,7 +14,7 @@ export default function Home() {
         <div className="flex flex-grow overflow-hidden">
           <ChatList />
           <ChatView />
-            <div className="w-16 h-full bg-white border-l flex flex-col items-center pt-3 space-y-3 relative">
+            <div className="w-16 h-full bg-white  flex flex-col items-center pt-3 space-y-3 relative">
                 <RightSidebar /></div>
         </div>
       </div>
