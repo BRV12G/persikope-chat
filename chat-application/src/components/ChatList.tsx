@@ -37,6 +37,7 @@
 import ChatListHeader from "@/components/chatlist-components/ChatListHeader";
 import ChatListItems from "@/components/chatlist-components/ChatListItems";
 import { BsChatDots } from "react-icons/bs";
+import { TbMessageCirclePlus } from "react-icons/tb";
 
 export default function ChatList() {
   const chats = [
@@ -53,19 +54,19 @@ export default function ChatList() {
   ];
 
   return (
-    <div className="w-100 bg-white border-r overflow-y-auto relative">
+    <div className="w-100 bg-white border-r border-gray-200  relative">
       {/* Chat List Header */}
       <ChatListHeader />
 
       {/* Chat Items */}
-      <ChatListItems chats={chats} />
+      <ChatListItems  />
 
       {/* New Chat Button */}
       <button
-        className="absolute bottom-4 right-4 bg-green-600 hover:bg-green-700 text-white p-2 rounded-full shadow-md"
+        className="absolute bottom-4 right-4 bg-green-700 hover:bg-green-700 text-white p-3 rounded-full shadow-md cursor-pointer"
         title="New Chat"
       >
-        <BsChatDots className="w-5 h-5" />
+        <TbMessageCirclePlus className="w-6 h-6" />
       </button>
     </div>
   );

@@ -5,7 +5,7 @@ import { IoFilter } from "react-icons/io5";
 
 export default function ChatListHeader() {
   return (
-    <div className="flex items-center px-3 py-2 border-b bg-gray-100 gap-2 text-sm font-[500] ">
+    <div className="flex items-center px-3 py-2 border-b border-gray-200 bg-gray-100 gap-2 text-sm font-[500] ">
       {/* Custom Filter Button */}
       <button className="flex items-center gap-1  py-[6px] rounded-md bg-transparent text-green-700 hover:bg-green-50 border border-transparent cursor-pointer">
         <RiFolderDownloadFill className="w-4 h-4" />
