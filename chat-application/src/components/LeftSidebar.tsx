@@ -131,7 +131,7 @@ const IconLink = ({ href, Icon, title }: { href: string; Icon: any; title: strin
     <Link href={href}>
       <button
         className={`w-full flex items-center justify-center p-2 rounded-md ${
-          isActive ? "bg-gray-200 text-green-600" : "text-gray-600"
+          isActive ? "bg-gray-200 text-green-700" : "text-gray-600"
         }`}
         title={title}
       >
